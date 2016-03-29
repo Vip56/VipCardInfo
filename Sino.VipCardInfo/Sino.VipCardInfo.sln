@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sino.Web.VipCardInfo", "Sino.Web.VipCardInfo\Sino.Web.VipCardInfo.csproj", "{CB083997-5382-4F7E-833B-BD116BCEA55E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB083997-5382-4F7E-833B-BD116BCEA55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB083997-5382-4F7E-833B-BD116BCEA55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB083997-5382-4F7E-833B-BD116BCEA55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB083997-5382-4F7E-833B-BD116BCEA55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
