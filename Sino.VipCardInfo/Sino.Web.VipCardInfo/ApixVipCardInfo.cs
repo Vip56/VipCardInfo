@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,7 @@ namespace Sino.Web.VipCardInfo
     /// </summary>
     public class ApixVipCardInfo : IVipCardInfo
     {
-        public const string URL = "http://a.apix.cn/datatiny/vipcardinfo/?cardnum={0}";
-
+        public const string URL = "http://e.apix.cn/apixcredit/bankcardinfo/bankcardinfo?cardno={0}";
         public Task<CardInfo> QueryCardInfo(string key, string cardnum)
         {
             return Task<CardInfo>.Factory.StartNew(() =>
@@ -27,9 +27,11 @@ namespace Sino.Web.VipCardInfo
                 var client = new RestClient(String.Format(URL, cardnum));
                 var request = new RestRequest(Method.GET);
                 request.AddHeader("apix-key", key);
-
-                var result = client.Execute<CardInfo>(request);
-                return result.Data;
+                request.AddHeader("content-type", "application/json");
+                request.AddHeader("accept", "application/json");
+                var response = client.Execute(request);
+                var result = JsonConvert.DeserializeObject<CardInfo>(response.Content);
+                return result;
             });
         }
     }
