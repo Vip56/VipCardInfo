@@ -53,6 +53,12 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sino.Web.VipCardInfo\Sino.Web.VipCardInfo.csproj">
+      <Project>{cb083997-5382-4f7e-833b-bd116bcea55e}</Project>
+      <Name>Sino.Web.VipCardInfo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
