@@ -1,19 +1,17 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Sino.Web.VipCardInfo
 {
-    /// <summary>
-    /// 由Apix第三方支持
-    /// </summary>
-    public class ApixVipCardInfo : IVipCardInfo
+	/// <summary>
+	/// 由Apix第三方支持
+	/// </summary>
+	public class ApixVipCardInfo : IVipCardInfo
     {
         public const string URL = "http://e.apix.cn/apixcredit/bankcardinfo/bankcardinfo?cardno={0}";
+
         public Task<CardInfo> QueryCardInfo(string key, string cardnum)
         {
             return Task<CardInfo>.Factory.StartNew(() =>
@@ -24,7 +22,7 @@ namespace Sino.Web.VipCardInfo
                 if (String.IsNullOrEmpty(cardnum))
                     throw new ArgumentNullException("cardnum");
 
-                var client = new RestClient(String.Format(URL, cardnum));
+                var client = new RestClient(string.Format(URL, cardnum));
                 var request = new RestRequest(Method.GET);
                 request.AddHeader("apix-key", key);
                 request.AddHeader("content-type", "application/json");
