@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sino.Web.VipCardInfo", "Sino.Web.VipCardInfo\Sino.Web.VipCardInfo.csproj", "{CB083997-5382-4F7E-833B-BD116BCEA55E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sino.Web.VipCardInfo", "Sino.VipCardInfo\Sino.Web.VipCardInfo.csproj", "{CB083997-5382-4F7E-833B-BD116BCEA55E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{9431DB84-F49D-4C7E-AAD4-FA94FA1BE10F}"
 EndProject
