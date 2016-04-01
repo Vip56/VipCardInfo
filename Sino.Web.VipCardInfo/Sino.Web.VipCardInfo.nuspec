@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.1.0</version>
+    <title>Sino.EventBus</title>
+    <authors>y-z-f</authors>
+    <owners>sino</owners>
+    <licenseUrl>http://opensource.org/licenses/GPL-3.0</licenseUrl>
+    <projectUrl>http://www.sowl.cn</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>基于APIX的银行卡信息获取</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>Apix</tags>
+  </metadata>
+</package>
